@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UpDownGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="yagom1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,13 +41,13 @@
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kqW-75-rQw"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Random Number!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb2-B9-mbe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Guess the Random Number!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb2-B9-mbe">
                                 <rect key="frame" x="220" y="20" width="412" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkH-3O-qu3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkH-3O-qu3">
                                 <rect key="frame" x="415" y="144.66666666666666" width="22" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,15 +73,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uZ-qr-vzy">
-                                <rect key="frame" x="79" y="23" width="51" height="35"/>
+                                <rect key="frame" x="70" y="23" width="51" height="35"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-HU-t3L">
-                                <rect key="frame" x="722" y="23" width="51" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-HU-t3L">
+                                <rect key="frame" x="709" y="23" width="64" height="35"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="memories" catalog="system">
@@ -98,6 +98,7 @@
                             <constraint firstItem="QHe-jd-pXv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xu-CI-bRF"/>
                             <constraint firstItem="DGg-HU-t3L" firstAttribute="centerY" secondItem="1uZ-qr-vzy" secondAttribute="centerY" id="68F-pt-Hdh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DGg-HU-t3L" secondAttribute="trailing" constant="20" id="AEG-GG-UP4"/>
+                            <constraint firstItem="DGg-HU-t3L" firstAttribute="leading" secondItem="Eb2-B9-mbe" secondAttribute="trailing" constant="77" id="DHH-YN-Kbx"/>
                             <constraint firstItem="Ksg-0m-HkZ" firstAttribute="leading" secondItem="QHe-jd-pXv" secondAttribute="trailing" constant="16" id="Fsc-Cp-ymU"/>
                             <constraint firstItem="QHe-jd-pXv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JLM-7g-wW2"/>
                             <constraint firstItem="QHe-jd-pXv" firstAttribute="centerY" secondItem="hiF-Ga-Cua" secondAttribute="centerY" id="JZD-tp-OQq"/>
@@ -105,10 +106,13 @@
                             <constraint firstItem="Eb2-B9-mbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ran-T1-dqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DGg-HU-t3L" secondAttribute="trailing" constant="20" id="SNB-Ob-cwn"/>
                             <constraint firstItem="Eb2-B9-mbe" firstAttribute="centerY" secondItem="1uZ-qr-vzy" secondAttribute="centerY" id="Uwj-e6-tXt"/>
+                            <constraint firstItem="Eb2-B9-mbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="VoL-nh-4gi"/>
+                            <constraint firstItem="jkH-3O-qu3" firstAttribute="top" secondItem="Eb2-B9-mbe" secondAttribute="bottom" constant="64" id="brd-Sw-3tG"/>
                             <constraint firstItem="jkH-3O-qu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPy-ra-6zH"/>
                             <constraint firstItem="QHe-jd-pXv" firstAttribute="leading" secondItem="hiF-Ga-Cua" secondAttribute="trailing" constant="16" id="gZt-gy-zoH"/>
                             <constraint firstItem="Eb2-B9-mbe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hOp-Gf-bpZ"/>
                             <constraint firstItem="Ksg-0m-HkZ" firstAttribute="centerY" secondItem="hiF-Ga-Cua" secondAttribute="centerY" id="l9O-7X-3Ha"/>
+                            <constraint firstItem="Eb2-B9-mbe" firstAttribute="leading" secondItem="1uZ-qr-vzy" secondAttribute="trailing" constant="99" id="shc-1n-lt3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DGg-HU-t3L" secondAttribute="trailing" constant="21" id="tUi-UD-wAL"/>
                         </constraints>
                     </view>
