@@ -1,2 +1,1 @@
-# Yagom
 # yagom2025
